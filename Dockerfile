@@ -4,8 +4,9 @@ RUN mkdir /graphql_api
 WORKDIR /graphql_api
 COPY Gemfile /graphql_api/Gemfile
 COPY Gemfile.lock /graphql_api/Gemfile.lock
+RUN gem install bundler
 RUN bundle install
-COPY . /graphql_api
+COPY . .
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
