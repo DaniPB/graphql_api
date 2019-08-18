@@ -1,24 +1,13 @@
 # README
+# GraphQl API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Rails API, with PostgreSQL database, and GraphQl
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+* Docker + docker-compose
 
-* System dependencies
+## Get Started
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- `sudo docker-compose up --build`
+- `sudo docker-compose run web rails db:create`
