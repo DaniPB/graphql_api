@@ -1,0 +1,5 @@
+curl \
+-X POST \
+-H "Content-Type: application/json" \
+--data '{ "query": "{ article(title: \"myarticle\") { title } }" }' \
+http://localhost:3000/graphql
