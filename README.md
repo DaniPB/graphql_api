@@ -9,5 +9,6 @@ This is a Rails API, with PostgreSQL database, and GraphQl
 
 ## Get Started
 
-- `sudo docker-compose up --build`
+- `sudo docker-compose up`
 - `sudo docker-compose run web rails db:create`
+- `sudo docker-compose run web rails db:migrate`
